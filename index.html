@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="src/js/script.js" defer></script>
+    <title>WF Software</title>
+</head>
+
+<body>
+    <a href="#main" class="skip-to-content">Pular para o item!</a>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__logo">
+                <span class="sr-only">WF Sofware</span>
+                <a href="/" aria-label="Logo da WF">
+                    <img src="src/images/LogoWF_PB.png" alt="WF" width="100">
+                </a>
+            </h1>
+            <div class="header__menu">
+                <!--NAVEGAÇÃO MÓVEL-->
+                <button class="button" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false"
+                    aria-controls="mobileMenu">
+                    <img src="src/images/menu.svg" alt="Menu Móvel" width="16" height="11">
+                </button>
+
+                <!--NAVEGAÇÃO DESKTOP-->
+                <nav class="desktop-menu">
+                    <h1 class="sr-only">Primeiro</h1>
+                    <ul>
+                        <li><a href="#" class="desktop-menu__link active">Início</a></li>
+                        <li><a href="#" class="desktop-menu__link">Sobre</a></li>
+                        <li><a href="#" class="desktop-menu__link">Loja</a></li>
+                        <li><a href="#" class="desktop-menu__link">Galeria</a></li>
+                        <li><a href="#" class="desktop-menu__link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--NAVEGAÇÃO DESKTOP-->
+    <nav class="mobile-menu" id="mobileMenu">
+        <h1 class="sr-only">Primeiro</h1>
+        <button class="button mobile-nav-close"></button>
+        <ul>
+            <li><a href="#" class="mobile-menu__link active">Início</a></li>
+            <li><a href="#" class="mobile-menu__link">Sobre</a></li>
+            <li><a href="#" class="mobile-menu__link">Loja</a></li>
+            <li><a href="#" class="mobile-menu__link">Galeria</a></li>
+            <li><a href="#" class="mobile-menu__link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero__image">
+                <img src="src/images/hero.jpg" alt="Pegando pesado!" loading="lazy" width="1920" height="1074">
+            </div>
+            <div class="container hero__container">
+                <div class="hero-wraper">
+                    <h1 class="hero-wrapper__heading">Faça desse ano <span>seu ano</span>!</h1>
+                    <p class="hero-wrapper__body">Defina seus limites e atinja suas metas fitness com um serviço
+                        'all-gym'</p>
+                    <a href="#" class="button button--primary" aria-label="Saiba mais!">Saiba mais!</a>
+                </div>
+                <a href="#scrolldown" class="hero__scrollbtn">ROLE PARA BAIXO <img src="src/images/arrow-down.svg"
+                        alt="DOWN" width="24" height="15" loading="lazy">
+                </a>
+            </div>
+        </section>
+
+
+        <section class="categoria pt-1" id="scrolldown">
+            <h1 class="sr-only">Categoria de treinos</h1>
+            <div class="container treinos">
+                <a href="#" class="treinos__card treinos__card--square">
+                    <h3 class="treinos__card-title">Estebeleça metas</h3>
+                    <div class="image-overlay"></div>
+                    <div class="treinos__image">
+                        <img src="src/images/expert-coaching.jpg" alt="Coaching experts" width="536" height="559" loading="lazy">
+                    </div>
+                </a>
+                <a href="#" class="treinos__card treinos__card--square">
+                    <h3 class="treinos__card-title">Treine pesado</h3>
+                    <div class="image-overlay"></div>
+                    <div class="treinos__image">
+                        <img src="src/images/small-group-pt.jpg" alt="Coaching experts" width="536" height="559" loading="lazy">
+                    </div>
+                </a>
+                <a href="#" class="treinos__card treinos__card--square">
+                    <h3 class="treinos__card-title">Alcance resultados</h3>
+                    <div class="image-overlay"></div>
+                    <div class="treinos__image">
+                        <img src="src/images/nutrition.jpg" alt="Coaching experts" width="536" height="559" loading="lazy">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="get-started get-started-img1 mt-1">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1 class="tex-center">Comece hoje <br><span>JÁ</span>!</h1>
+                <a href="#" class="button button--primary">Entre</a>
+            </div>
+        </section>
+
+        <section class="treinos-options pt-1" id="scrolldown">
+            <div class="container">
+                <h1 class="treinos-options__heading tex-center">Suas opções de <span>treinos</span></h1>
+                <p class="treinos-options__body tex-center">Defina seus limites e persiga suas metas fitness com um serviço all-acess! Experimente uma variedade de classes, utilize os melhores equipamentos. </p>
+                <div class="treinos trenos--options pt-1">
+                    <a href="#" class="treinos__card treinos__card--end">
+                        <h3 class="treinos__card-title">Pequeno grupo</h3>
+                        <p class="treinos__card-body">Espere pelo inesperado na sua assinatura de alta intensidade. Gire por tempos de intervalos desenhados para que choque constantemente seu sistema e dê grandes resultados!</p>
+                        <div class="image-overlay"></div>
+                        <div class="treinos__image">
+                            <img src="src/images/nutrition.jpg" alt="Pequino grupo" width="536" height="559" loading="lazy">
+                        </div>
+                    </a>
+                    <a href="#" class="treinos__card treinos__card--end">
+                        <h3 class="treinos__card-title">Classes</h3>
+                        <p class="treinos__card-body">Desenvolva força, condicionamento e flexibilidade com nosso ZOO 365 - inspire rotinas fisicas. Esse eficiente, efetivo e "total body workouts" pode ser feito em casa com minimos equipamentos. </p>
+                        <div class="image-overlay"></div>
+                        <div class="treinos__image">
+                            <img src="src/images/expert-coaching.jpg" alt="Coaching experts" width="536" height="559" loading="lazy">
+                        </div>
+                    </a>
+                    <a href="#" class="treinos__card treinos__card--end">
+                        <h3 class="treinos__card-title">Um x Um</h3>
+                        <p class="treinos__card-body">Receba orientações de experts, um plano personalizado e atenção em tempo real com personal trainer. </p>
+                        <div class="image-overlay"></div>
+                        <div class="treinos__image">
+                            <img src="src/images/support.jpg" alt="Coaching experts" width="536" height="559" loading="lazy">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-started get-started-img2 mt-1">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1 class="tex-center">A GENTE TE AJUDARÁ A GANHAR A FORMA DA SUA VIDA.<br>
+                    <span>VAMOS COMEÇAR!</span>
+                </h1>
+                <a href="#" class="button button--primary">Entre</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer pt-1">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3 class="footer-col__heading">Nos encontre</h3>
+                <ul class="footer-col__list">
+                    <li>Endereço: <a href="#">Rua 43, Moscow em Londres</a></li>
+                    <li>Contato: <a href="#">(12) 9-1234-5678</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-col__heading">Suporte</h3>
+                <ul class="footer-col__list">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-col__heading">Sobre nós</h3>
+                <ul class="footer-col__list">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+             <div class="footer-col">
+                <img src="src/images/Logotop.png" alt="WF" width="125px">
+                </ul>
+            </div>
+        </div>
+        <div class="container tex-center footer__copy" >
+            <p class="pt-1">&copy; 2021 Zoo365 - Criado pr <a href="#">WF</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
